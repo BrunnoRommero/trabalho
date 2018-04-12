@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+  <html ng-app="app" >
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	  <link rel="stylesheet" href="css/arq_estilo.css">
+    </head>
+    <style>
+		img{
+ 		max-width:100%;
+		height:auto;
+		}
+	</style>
+
+    <body>
+	<header>	
+		<div class="nav-wrapper">
+	      <center><img id="logo" src="img/logo.png"></center>
+	    </div>
+	</header>
+	
+		<div id="fundo">
+			<img class='bg' src="img/home.jpg">	
+		</div>
+				
+		<div id="encurtador" ng-controller='HelloController'>
+			<div id="informativo">
+				<center><b>Encurte seus links</b></center>
+				<center>Links são longos. Encurte os links que você deseja compartilhar, 
+				e acompanhe enquanto viajam através da internet.</center>
+			</div>
+		
+
+			<div id="inputt" class="input-group mb-3">
+	  			<input id="campo_link" ng-model="link" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	  			<div class="input-group-append">
+	   				<button id="button" ng-click='TheMagic()' class="btn btn-outline-secondary" onclick="Mudarestado('minhaDiv')" type="button">ENCURTAR</button>
+	  			</div>
+			</div>
+			<div id="encurtado">
+				<center><p>{{magic}}</p></center>
+			</div>
+		</div>
+			
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	  <script src="js/urls.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,33 @@
+#encurtador{
+	position: relative;
+	bottom: 385px;
+	text-align: -webkit-center;
+}
+#inputt{
+	display: flex;
+	bottom: 100px;
+	width: 30%;
+}
+#logo{
+	margin: 10px;
+}
+#informativo{
+	color: #eee;
+	font-size: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	bottom: 140px;
+}
+#encurtado{
+	color: #eee;
+	font-size: 20px;
+	position: relative;
+	bottom: 90px;
+}
+#campo_link{
+	font-size: x-large;
+	color: #eee;
+}
+#button{
+	background: chocolate;
+}
